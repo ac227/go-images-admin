@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 p-4">
+    <h1 class="text-2xl font-bold mb-4">Uploaded Images</h1>
+    <ul>
+        {{range .}}
+        <li class="mb-2">
+            <a href="/images/{{.}}" class="text-blue-500 hover:underline">{{.}}</a>
+        </li>
+        {{end}}
+    </ul>
+</body>
+</html>
